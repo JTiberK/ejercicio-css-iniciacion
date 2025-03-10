@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios CSS</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(24, 128, 197);
+        }
+
+        pre {
+            color: rgb(73, 199, 15);
+
+        }
+
+        #resp {
+
+            color: rgb(199, 113, 15);
+        }
+    </style>
+</head>
+
+<body>
+    <h3><strong>Ejercicio 1: Cambiar color de texto (Inline CSS)</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Utiliza CSS inline para cambiar el color del texto de un párrafo a rojo. Aprende cómo aplicar estilos
+        directamente en el HTML usando el atributo <code>style</code>.
+    </p>
+    <pre><code>&lt;p style="color: red;"&gt;Este es un párrafo con texto en color rojo utilizando CSS inline.&lt;/p&gt;</code></pre>
+    <p style="color: red;">Este es un párrafo con texto en color rojo utilizando CSS inline.</p>
+    <hr>
+
+    <h3><strong>Ejercicio 2: Estilos internos (Tag <code>&lt;style&gt;</code>)</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Usa la etiqueta <code>&lt;style&gt;</code>  dentro del archivo HTML para definir un estilo que cambie el color de todos los títulos <code>&lt;h1&gt;</code> a azul. Practica cómo aplicar estilos internos al documento.
+        
+        <pre>
+            <code>&lt;style&gt;
+                h1 {
+                    color: blue;
+                }
+            &lt;/style&gt;
+            </code>
+        </pre>
+        
+        <hr>
+
+    <h3><strong>Ejercicio 3: Enlace a CSS externo</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Crea un archivo externo llamado <code>styles.css</code> y vincúlalo a tu archivo HTML mediante la etiqueta
+        <code>&lt;link&gt;</code>. Define un estilo básico en este archivo para entender cómo organizar tus estilos en
+        archivos separados.
+    </p>
+    <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+
+    <hr>
+
+    <h3><strong>Ejercicio 4: Selectores de clase</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Crea una clase <code>.destacado</code> en tu hoja de estilos que ponga el texto en negrita
+        (<code>font-weight: bold</code>). Aplica esta clase a un elemento en tu HTML para ver su efecto.
+    </p>
+
+    <pre>
+        <code>
+            .destacado {
+                font-weight: bold;
+            }
+        </code>
+    </pre>
+
+    <hr>
+
+    <h3><strong>Ejercicio 5: Selectores de ID</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Usa un selector de ID (<code>#contenedor</code>) para centrar un <code>&lt;div&gt;</code> horizontalmente.
+        Configura su ancho y utiliza <code>margin: 0 auto;</code> para lograrlo.
+    </p>
+
+    <pre>
+        <code>
+            #contenedor {
+                width: 600px;
+                margin: 0 auto;
+            }
+        </code>
+    </pre>
+    <hr>
+
+    <h3><strong>Ejercicio 6: Agrupar selectores</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Aplica el mismo estilo a los elementos <code>&lt;h2&gt;</code> y <code>&lt;h3&gt;</code> agrupando sus
+        selectores en una sola regla. Cambia su familia de fuentes y color para practicar la reutilización de estilos.
+    </p>
+
+    <pre>
+        <code>
+            h2,
+            h3 {
+                font-family: 'Arial', sans-serif;
+                color: rgb(24, 128, 197);
+            }
+        </code>
+    </pre>
+    <hr>
+
+    <h3><strong>Ejercicio 7: Modelo de caja básico</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Crea un <code>&lt;div&gt;</code> con un padding de 20px, un borde negro de 1px y un margen de 10px.
+        Familiarízate con el modelo de caja de CSS y cómo afecta el espacio alrededor de un elemento.
+    </p>
+
+    <pre><code>&lt;div style="padding: 20px; border: 1px solid black; margin: 10px;"&gt;Este es un div con padding, borde y margen.&lt;/div&gt;</code></pre>
+    <div id="resp"  style="padding: 20px; border: 1px solid black; margin: 10px;">Este es un div con padding, borde y margen.</div>
+
+    <hr>
+
+    <h3><strong>Ejercicio 8: Centrar elemento con margen</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Centra un <code>&lt;div&gt;</code> de 600px de ancho horizontalmente utilizando <code>margin: 0 auto;</code>.
+        Aprende cómo el uso de márgenes automáticos puede simplificar el centrado de elementos.
+    </p>
+
+    <pre><code>&lt;div style="width: 600px; margin: 0 auto;"&gt;Este es un div centrado horizontalmente.&lt;/div&gt;</code></pre>
+    <div id="resp" style="width: 600px; margin: 0 auto;">Este es un div centrado horizontalmente.</div>
+
+    <hr>
+
+    <h3><strong>Ejercicio 9: Alineación de texto</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Alinea un párrafo a la derecha usando <code>text-align: right;</code> y subraya el texto con
+        <code>text-decoration: underline;</code>. Practica propiedades básicas de formato de texto.
+    </p>
+
+    <pre><code>&lt;p style="text-align: right; text-decoration: underline;"&gt;Este es un párrafo alineado a la derecha y subrayado.&lt;/p&gt;</code></pre>
+    <p id="resp" style="text-align: right; text-decoration: underline;">Este es un párrafo alineado a la derecha y subrayado.</p>
+
+    <hr>
+
+    <h3><strong>Ejercicio 10: Fuentes personalizadas</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Incluye una fuente personalizada de Google Fonts en tu proyecto y aplica esta fuente al cuerpo del documento
+        (<code>&lt;body&gt;</code>). Aprende a mejorar la apariencia visual de tu sitio web.
+    </p>
+
+    <pre><code>&lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet"&gt;&lt;/link&gt;
+    &lt;style&gt;
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    &lt;/style&gt;
+    </code></pre>
+    <hr>
+
+    <h3><strong>Ejercicio 11: Fondo degradado</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Crea un fondo degradado que pase de azul a verde utilizando la propiedad
+        <code>background: linear-gradient(...)</code>. Explora cómo los gradientes pueden agregar profundidad a tus
+        diseños.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 12: Border-radius</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Convierte un <code>&lt;div&gt;</code> cuadrado de 100x100px en un círculo perfecto usando
+        <code>border-radius: 50%;</code>. Descubre cómo redondear bordes para crear formas más interesantes.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 13: Display inline-block</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Muestra tres <code>&lt;div&gt;</code> en línea conservando su ancho específico mediante
+        <code>display: inline-block;</code>. Aprende a controlar el flujo de elementos en una página.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 14: Posicionamiento relativo</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Mueve un elemento 15px hacia abajo desde su posición original usando <code>position: relative;</code> y la
+        propiedad <code>top</code>. Familiarízate con el posicionamiento relativo en CSS.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 15: Posicionamiento absoluto</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Coloca un botón en la esquina superior derecha de su contenedor utilizando <code>position: absolute;</code>
+        junto con las propiedades <code>top</code> y <code>right</code>. Aprende cómo el posicionamiento absoluto
+        permite colocar elementos con precisión.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 16: Menú con Flexbox</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Crea un menú horizontal centrado utilizando Flexbox. Usa propiedades como <code>display: flex;</code>,
+        <code>justify-content: center;</code> y <code>gap</code> para distribuir los elementos uniformemente.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 17: Transición simple</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Haz que un botón cambie de color suavemente al pasar el mouse sobre él utilizando la propiedad
+        <code>transition</code>. Descubre cómo las transiciones añaden interactividad visual.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 18: Animación con keyframes</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Crea una animación que desplace un elemento de izquierda a derecha utilizando <code>@keyframes</code>. Aprende
+        cómo las animaciones pueden dar vida a tus diseños.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 19: Media Queries</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Oculta un elemento en pantallas menores de 600px de ancho usando una media query con
+        <code>@media (max-width: 600px)</code>. Practica cómo adaptar tus diseños a diferentes dispositivos.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 20: Pseudo-elementos (<code>::before</code>)</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Agrega un ícono antes de cada enlace (<code>&lt;a&gt;</code>) utilizando el pseudo-elemento
+        <code>::before</code> y la propiedad <code>content</code>. Aprende a enriquecer tus diseños con contenido
+        generado por CSS.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 21: CSS Variables</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Define una variable CSS (<code>--color-primario</code>) para almacenar un color primario y úsala en varios
+        elementos. Aprende cómo las variables facilitan la gestión de estilos.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 22: Transformaciones 2D</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Rota una imagen 45 grados al hacer hover utilizando la propiedad <code>transform: rotate(45deg);</code>. Explora
+        cómo las transformaciones permiten modificar visualmente los elementos.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 23: Box-shadow</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Añade una sombra suave a una tarjeta (<code>&lt;div&gt;</code>) usando la propiedad <code>box-shadow</code>.
+        Mejora la percepción de profundidad en tus diseños.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 24: Texto en columnas</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Divide un párrafo largo en dos columnas utilizando las propiedades <code>column-count</code> y
+        <code>column-gap</code>. Aprende cómo estructurar texto en múltiples columnas.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 25: Filtros CSS</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Convierte una imagen a escala de grises utilizando el filtro <code>filter: grayscale(100%);</code>. Descubre
+        cómo los filtros pueden alterar la apariencia visual de los elementos.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 26: Efecto overlay</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Crea un efecto de superposición (<code>overlay</code>) sobre una imagen que se muestre al hacer hover. Combina
+        técnicas de posicionamiento absoluto y transparencia (<code>opacity</code>) para lograr este efecto.
+    </p>
+    <hr>
+
+    <h3><strong>Ejercicio 27: Animación de carga</strong></h3>
+    <p><strong>Enunciado:</strong><br>
+        Crea un spinner giratorio utilizando una animación circular con <code>@keyframes</code> y
+        <code>transform: rotate(...)</code>. Aprende a implementar indicadores visuales de carga.
+    </p>
+</body>
+
+</html>

@@ -35,9 +35,10 @@
 
     <h3><strong>Ejercicio 2: Estilos internos (Tag <code>&lt;style&gt;</code>)</strong></h3>
     <p><strong>Enunciado:</strong><br>
-        Usa la etiqueta <code>&lt;style&gt;</code>  dentro del archivo HTML para definir un estilo que cambie el color de todos los títulos <code>&lt;h1&gt;</code> a azul. Practica cómo aplicar estilos internos al documento.
-        
-        <pre>
+        Usa la etiqueta <code>&lt;style&gt;</code> dentro del archivo HTML para definir un estilo que cambie el color de
+        todos los títulos <code>&lt;h1&gt;</code> a azul. Practica cómo aplicar estilos internos al documento.
+
+    <pre>
             <code>&lt;style&gt;
                 h1 {
                     color: blue;
@@ -45,8 +46,8 @@
             &lt;/style&gt;
             </code>
         </pre>
-        
-        <hr>
+
+    <hr>
 
     <h3><strong>Ejercicio 3: Enlace a CSS externo</strong></h3>
     <p><strong>Enunciado:</strong><br>
@@ -113,8 +114,10 @@
         Familiarízate con el modelo de caja de CSS y cómo afecta el espacio alrededor de un elemento.
     </p>
 
+    <div id="resp" style="padding: 20px; border: 1px solid black; margin: 10px;">Este es un div con padding, borde y
+        margen.</div>
+
     <pre><code>&lt;div style="padding: 20px; border: 1px solid black; margin: 10px;"&gt;Este es un div con padding, borde y margen.&lt;/div&gt;</code></pre>
-    <div id="resp"  style="padding: 20px; border: 1px solid black; margin: 10px;">Este es un div con padding, borde y margen.</div>
 
     <hr>
 
@@ -124,8 +127,9 @@
         Aprende cómo el uso de márgenes automáticos puede simplificar el centrado de elementos.
     </p>
 
-    <pre><code>&lt;div style="width: 600px; margin: 0 auto;"&gt;Este es un div centrado horizontalmente.&lt;/div&gt;</code></pre>
     <div id="resp" style="width: 600px; margin: 0 auto;">Este es un div centrado horizontalmente.</div>
+
+    <pre><code>&lt;div style="width: 600px; margin: 0 auto;"&gt;Este es un div centrado horizontalmente.&lt;/div&gt;</code></pre>
 
     <hr>
 
@@ -135,8 +139,10 @@
         <code>text-decoration: underline;</code>. Practica propiedades básicas de formato de texto.
     </p>
 
+    <p id="resp" style="text-align: right; text-decoration: underline;">Este es un párrafo alineado a la derecha y
+        subrayado.</p>
+
     <pre><code>&lt;p style="text-align: right; text-decoration: underline;"&gt;Este es un párrafo alineado a la derecha y subrayado.&lt;/p&gt;</code></pre>
-    <p id="resp" style="text-align: right; text-decoration: underline;">Este es un párrafo alineado a la derecha y subrayado.</p>
 
     <hr>
 
@@ -161,6 +167,16 @@
         <code>background: linear-gradient(...)</code>. Explora cómo los gradientes pueden agregar profundidad a tus
         diseños.
     </p>
+
+    <div style="width: 100%; height: 100px; background: linear-gradient(to right, blue, green);"></div>
+
+    <pre>
+        <code>
+            body {
+                background: linear-gradient(to right, blue, green);
+            }
+        </code>
+    </pre>
     <hr>
 
     <h3><strong>Ejercicio 12: Border-radius</strong></h3>
@@ -168,6 +184,15 @@
         Convierte un <code>&lt;div&gt;</code> cuadrado de 100x100px en un círculo perfecto usando
         <code>border-radius: 50%;</code>. Descubre cómo redondear bordes para crear formas más interesantes.
     </p>
+
+    <div style="width: 100px; height: 100px; background-color: red; border-radius: 50%;"></div>
+
+    <pre>
+        <code>
+            &lt;div style="width: 100px; height: 100px; background-color: red; border-radius: 50%;"&gt;
+            </div>
+        </code>
+    </pre>
     <hr>
 
     <h3><strong>Ejercicio 13: Display inline-block</strong></h3>
@@ -175,6 +200,31 @@
         Muestra tres <code>&lt;div&gt;</code> en línea conservando su ancho específico mediante
         <code>display: inline-block;</code>. Aprende a controlar el flujo de elementos en una página.
     </p>
+
+    <div style="display: inline-block; width: 30%; background-color: lightblue; padding: 10px; margin: 5px;">
+        <p>Div 1</p>
+    </div>
+    <div style="display: inline-block; width: 30%; background-color: lightgreen; padding: 10px; margin: 5px;">
+        <p>Div 2
+        <p>
+    </div>
+    <div style="display: inline-block; width: 30%; background-color: lightcoral; padding: 10px; margin: 5px;">
+        <p>Div 3</p>
+    </div>
+
+    <pre>
+        <code>
+    &lt;div style="display: inline-block; width: 30%; background-color: lightblue; padding: 10px; margin: 5px;"&gt;
+    &lt;p&gt;Div 1&lt;/p&gt;
+    &lt;/div>
+    &lt;div style="display: inline-block; width: 30%; background-color: lightgreen; padding: 10px; margin: 5px;"&gt;
+    &lt;p&gt;Div 2&lt;p&gt;
+    &lt;/div>
+    &lt;div style="display: inline-block; width: 30%; background-color: lightcoral; padding: 10px; margin: 5px;"&gt;
+    &lt;p&gt;Div 3&lt;/p&gt;
+    &lt;/div&gt;
+        </code>
+    </pre>
     <hr>
 
     <h3><strong>Ejercicio 14: Posicionamiento relativo</strong></h3>
@@ -182,6 +232,17 @@
         Mueve un elemento 15px hacia abajo desde su posición original usando <code>position: relative;</code> y la
         propiedad <code>top</code>. Familiarízate con el posicionamiento relativo en CSS.
     </p>
+
+    <div id="resp" style="position: relative; top: 15px;">
+        Este elemento se ha movido 15px hacia abajo desde su posición original.
+    </div>
+
+    <pre><code>
+    &lt;div style="position: relative; top: 15px;"&gt;
+    Este elemento se ha movido 15px hacia abajo desde su posición original.
+    &lt;/div&gt;
+    </code></pre>
+
     <hr>
 
     <h3><strong>Ejercicio 15: Posicionamiento absoluto</strong></h3>
@@ -190,6 +251,18 @@
         junto con las propiedades <code>top</code> y <code>right</code>. Aprende cómo el posicionamiento absoluto
         permite colocar elementos con precisión.
     </p>
+
+    <div style="position: relative;">
+        <button style="position: absolute; top: 0; right: 0;">Botón</button>
+    </div>
+
+    <pre>
+        <code>
+            &lt;div style="position: relative;"&gt;
+                &lt;button style="position: absolute; top: 0; right: 0;"&gt;Botón&lt;/button&gt;
+            &lt;/div&gt;
+        </code>
+     </pre>
     <hr>
 
     <h3><strong>Ejercicio 16: Menú con Flexbox</strong></h3>
@@ -197,6 +270,29 @@
         Crea un menú horizontal centrado utilizando Flexbox. Usa propiedades como <code>display: flex;</code>,
         <code>justify-content: center;</code> y <code>gap</code> para distribuir los elementos uniformemente.
     </p>
+
+    <div>
+        <ul style="display: flex; justify-content: center; gap: 20px; list-style: none; padding: 0;">
+            <li><a id="resp" href="#home">Home</a></li>
+            <li><a id="resp" href="#about">About</a></li>
+            <li><a id="resp" href="#services">Services</a></li>
+            <li><a id="resp" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <pre>
+        <code>
+        &lt;div&gt;
+            &lt;ul style=&quot;display: flex; justify-content: center; gap: 20px; list-style: none; padding: 0;&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#services&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        </code>
+    </pre>
+
     <hr>
 
     <h3><strong>Ejercicio 17: Transición simple</strong></h3>
@@ -204,6 +300,47 @@
         Haz que un botón cambie de color suavemente al pasar el mouse sobre él utilizando la propiedad
         <code>transition</code>. Descubre cómo las transiciones añaden interactividad visual.
     </p>
+
+    <button class="color-transition">Acercate</button>
+
+    <style>
+        .color-transition {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+
+        .color-transition:hover {
+            background-color: green;
+        }
+    </style>
+
+
+    <pre>
+        <code>
+    &lt;button class="color-transition"&gt;Sobre mi&lt;/button&gt;
+
+    &lt;style&gt;
+    .color-transition {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    }
+
+    .color-transition:hover {
+    background-color: green;
+    }
+    &lt;/style&gt;
+        </code>
+    </pre>
+
+
     <hr>
 
     <h3><strong>Ejercicio 18: Animación con keyframes</strong></h3>
@@ -211,6 +348,51 @@
         Crea una animación que desplace un elemento de izquierda a derecha utilizando <code>@keyframes</code>. Aprende
         cómo las animaciones pueden dar vida a tus diseños.
     </p>
+
+    <div class="animated-box"></div>
+
+    <style>
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            animation: moveRight 5s infinite;
+        }
+
+        @keyframes moveRight {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+    </style>
+
+    <pre>
+        &lt;div class="animated-box"&gt;&lt;/div&gt;
+
+        &lt;style&gt;
+            .animated-box {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: absolute;
+                animation: moveRight 5s infinite;
+            }
+
+            @keyframes moveRight {
+                0% {
+                    left: 0;
+                }
+                100% {
+                    left: 100%;
+                }
+            }
+        &lt;/style&gt;
+    </pre>
     <hr>
 
     <h3><strong>Ejercicio 19: Media Queries</strong></h3>
@@ -218,6 +400,34 @@
         Oculta un elemento en pantallas menores de 600px de ancho usando una media query con
         <code>@media (max-width: 600px)</code>. Practica cómo adaptar tus diseños a diferentes dispositivos.
     </p>
+
+
+    <div id="resp" class="hidden-on-small-screens">
+        Este elemento se ocultará en pantallas menores de 600px de ancho.
+    </div>
+
+    <style>
+        @media (max-width: 600px) {
+            .hidden-on-small-screens {
+                display: none;
+            }
+        }
+    </style>
+
+    <pre><code>
+    &lt;div id="resp" class="hidden-on-small-screens"&gt;
+        Este elemento se ocultará en pantallas menores de 600px de ancho.
+    &lt;/div&gt;
+
+    &lt;style&gt;
+        @media (max-width: 600px) {
+            .hidden-on-small-screens {
+                display: none;
+            }
+        }
+    &lt;/style&gt;
+    </code></pre>
+
     <hr>
 
     <h3><strong>Ejercicio 20: Pseudo-elementos (<code>::before</code>)</strong></h3>
@@ -226,6 +436,108 @@
         <code>::before</code> y la propiedad <code>content</code>. Aprende a enriquecer tus diseños con contenido
         generado por CSS.
     </p>
+
+
+    <nav>
+       
+        <a href="#home">Inicio</a>
+        <a href="#about">Acerca de</a>
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+
+    </nav>
+
+    <style>
+        nav {
+            background: #f9f9f9;
+            /* Fondo gris claro */
+            padding: 20px;
+            /* Espaciado interno */
+            border-radius: 5px;
+            /* Bordes redondeados */
+            display: inline-block;
+            /* Mostrar en línea */
+        }
+
+
+        nav a {
+            text-decoration: none;
+            /* Eliminar subrayado */
+            color: #2a447a;
+            /* Color del texto */
+            display: inline-flex;
+            /* Usar flexbox para alinear el ícono y el texto */
+            align-items: center;
+            /* Centrar verticalmente */
+        }
+
+        nav a::before {
+            content: "🔎";
+            /* Ícono Unicode antes del enlace */
+            margin-right: 12px;
+            /* Espacio entre el ícono y el texto */
+            font-size: 1.2em;
+            /* Posicionamiento absoluto */
+            left: -30px;
+            /* Ajusta la posición del ícono */
+            top: 30%;
+            /* Centrar verticalmente */
+            transform: translateY(-50%);
+            /* Ajustar para centrar */
+        }
+    </style>
+
+    <pre>
+        &lt;nav&gt;
+           
+            &lt;a href=&quot;#home&quot;&gt;Inicio&lt;/a&gt;
+            &lt;a href=&quot;#about&quot;&gt;Acerca de&lt;/a&gt;
+            &lt;a href=&quot;#services&quot;&gt;Servicios&lt;/a&gt;
+            &lt;a href=&quot;#contact&quot;&gt;Contacto&lt;/a&gt;
+
+        &lt;/nav&gt;
+
+        &lt;style&gt;
+            nav {
+                background: #f9f9f9;
+                /* Fondo gris claro */
+                padding: 20px;
+                /* Espaciado interno */
+                border-radius: 5px;
+                /* Bordes redondeados */
+                display: inline-block;
+                /* Mostrar en línea */
+            }
+
+
+            nav a {
+                text-decoration: none;
+                /* Eliminar subrayado */
+                color: #2a447a;
+                /* Color del texto */
+                display: inline-flex;
+                /* Usar flexbox para alinear el ícono y el texto */
+                align-items: center;
+                /* Centrar verticalmente */
+            }
+
+            nav a::before {
+                content: &quot;🔎&quot;;
+                /* Ícono Unicode antes del enlace */
+                margin-right: 12px;
+                /* Espacio entre el ícono y el texto */
+                font-size: 1.2em;
+                /* Posicionamiento absoluto */
+                left: -30px;
+                /* Ajusta la posición del ícono */
+                top: 30%;
+                /* Centrar verticalmente */
+                transform: translateY(-50%);
+                /* Ajustar para centrar */
+            }
+        &lt;/style&gt;
+    </pre>
+
     <hr>
 
     <h3><strong>Ejercicio 21: CSS Variables</strong></h3>
@@ -233,6 +545,43 @@
         Define una variable CSS (<code>--color-primario</code>) para almacenar un color primario y úsala en varios
         elementos. Aprende cómo las variables facilitan la gestión de estilos.
     </p>
+
+    <style>
+        :root {
+            --color-primario: #d12cd6;
+        }
+
+        h1 {
+            color: var(--color-primario);
+        }
+
+        a {
+            color: var(--color-primario);
+        }
+    </style>
+
+    <h1>Encabezado Principal</h1>
+    <a href="https://www.example.com">Enlace con color primario</a>
+
+    <pre>
+        &lt;style&gt;
+            :root {
+                --color-primario: #d12cd6;
+            }
+
+            h1 {
+                color: var(--color-primario);
+            }
+
+            a {
+                color: var(--color-primario);
+            }
+        &lt;/style&gt;
+
+        &lt;h1&gt;Encabezado Principal&lt;/h1&gt;
+        &lt;a href=&quot;https://www.example.com&quot;&gt;Enlace con color primario&lt;/a&gt;
+    </pre>
+
     <hr>
 
     <h3><strong>Ejercicio 22: Transformaciones 2D</strong></h3>
@@ -240,6 +589,27 @@
         Rota una imagen 45 grados al hacer hover utilizando la propiedad <code>transform: rotate(45deg);</code>. Explora
         cómo las transformaciones permiten modificar visualmente los elementos.
     </p>
+
+    <img src="https://planetasmagicos.com/wp-content/uploads/2017/02/p.peque%C3%B1o-3-mod.jpg" alt="Placeholder Image"
+        class="rotate-on-hover" width="100">
+
+    <style>
+        .rotate-on-hover:hover {
+            transform: rotate(45deg);
+        }
+    </style>
+
+    <pre>
+    &lt;img src="https://planetasmagicos.com/wp-content/uploads/2017/02/p.peque%C3%B1o-3-mod.jpg" alt="Placeholder Image" class="rotate-on-hover" width="100"&gt;
+
+    &lt;style&gt;
+        .rotate-on-hover:hover {
+            transform: rotate(45deg);
+        }
+    &lt;/style&gt;
+    </pre>
+
+
     <hr>
 
     <h3><strong>Ejercicio 23: Box-shadow</strong></h3>
@@ -247,6 +617,21 @@
         Añade una sombra suave a una tarjeta (<code>&lt;div&gt;</code>) usando la propiedad <code>box-shadow</code>.
         Mejora la percepción de profundidad en tus diseños.
     </p>
+
+    <div style="padding: 20px; background-color: #ebd9d9;">
+        <div style="width: 200px; height: 100px; background-color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            Tarjeta con sombra suave
+        </div>
+    </div>
+
+    <pre>
+        &lt;div style=&quot;padding: 20px; background-color: #ebd9d9;&quot;&gt;
+            &lt;div style=&quot;width: 200px; height: 100px; background-color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);&quot;&gt;
+                Tarjeta con sombra suave
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </pre>
+
     <hr>
 
     <h3><strong>Ejercicio 24: Texto en columnas</strong></h3>
@@ -254,6 +639,46 @@
         Divide un párrafo largo en dos columnas utilizando las propiedades <code>column-count</code> y
         <code>column-gap</code>. Aprende cómo estructurar texto en múltiples columnas.
     </p>
+
+    <div id="resp" class="columnas">
+        <p>
+            Este es un párrafo largo que se dividirá en dos columnas utilizando CSS.
+            La propiedad column-count permite especificar el número de columnas en las que se debe dividir el contenido.
+            Además, la propiedad column-gap se utiliza para establecer el espacio entre las columnas.
+            Esto es útil para mejorar la legibilidad del texto y hacer que el contenido se vea más organizado.
+            Puedes agregar más texto aquí para ver cómo se comporta el contenido al dividirse en columnas.
+        </p>
+    </div>
+
+    <style>
+        .columnas {
+            column-count: 2;
+            /* Número de columnas */
+            column-gap: 20px;
+            /* Espacio entre columnas */
+        }
+    </style>
+
+    <pre>
+        &lt;div class=&quot;columnas&quot;&gt;
+            &lt;p&gt;
+                Este es un párrafo largo que se dividirá en dos columnas utilizando CSS. 
+                La propiedad column-count permite especificar el número de columnas en las que se debe dividir el contenido. 
+                Además, la propiedad column-gap se utiliza para establecer el espacio entre las columnas. 
+                Esto es útil para mejorar la legibilidad del texto y hacer que el contenido se vea más organizado. 
+                Puedes agregar más texto aquí para ver cómo se comporta el contenido al dividirse en columnas.
+            &lt;/p&gt;
+        &lt;/div&gt;
+        
+        &lt;style&gt;
+        .columnas {
+            column-count: 2; /* Número de columnas */
+            column-gap: 20px; /* Espacio entre columnas */
+        }
+        &lt;/style&gt;
+    </pre>
+
+
     <hr>
 
     <h3><strong>Ejercicio 25: Filtros CSS</strong></h3>
@@ -261,6 +686,36 @@
         Convierte una imagen a escala de grises utilizando el filtro <code>filter: grayscale(100%);</code>. Descubre
         cómo los filtros pueden alterar la apariencia visual de los elementos.
     </p>
+
+    <div class="imagen-gris">
+        <img src="https://planetasmagicos.com/wp-content/uploads/2017/02/p.peque%C3%B1o-3-mod.jpg"
+            alt="Imagen Original">
+    </div>
+
+    <style>
+        .imagen-gris img {
+            filter: grayscale(100%);
+            width: 150px;
+            /* Ajusta el tamaño de la imagen si es necesario */
+            height: auto;
+            /* Mantiene la relación de aspecto */
+        }
+    </style>
+
+    <pre>
+        &lt;div class=&quot;imagen-gris&quot;&gt;
+        &lt;img src=&quot;https://planetasmagicos.com/wp-content/uploads/2017/02/p.peque%C3%B1o-3-mod.jpg&quot; alt=&quot;Imagen Original&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;style&gt;
+        .imagen-gris img {
+        filter: grayscale(100%); 
+        width: 150px; /* Ajusta el tamaño de la imagen si es necesario */
+        height: auto; /* Mantiene la relación de aspecto */
+        }
+        &lt;/style&gt;
+    </pre>
+
     <hr>
 
     <h3><strong>Ejercicio 26: Efecto overlay</strong></h3>
@@ -268,6 +723,101 @@
         Crea un efecto de superposición (<code>overlay</code>) sobre una imagen que se muestre al hacer hover. Combina
         técnicas de posicionamiento absoluto y transparencia (<code>opacity</code>) para lograr este efecto.
     </p>
+
+    <div class="imagen-container">
+        <img src="https://planetasmagicos.com/wp-content/uploads/2017/02/p.peque%C3%B1o-3-mod.jpg" alt="Imagen"
+            class="imagen">
+        <div class="overlay">Texto de Superposición</div>
+    </div>
+
+
+    <style>
+        .imagen-container {
+            position: relative;
+            /* Necesario para posicionar el overlay */
+            width: 200px;
+            /* Ajusta el tamaño de la imagen */
+        }
+
+        .imagen {
+            width: 100%;
+            /* La imagen ocupa todo el contenedor */
+            height: auto;
+            /* Mantiene la relación de aspecto */
+            display: block;
+            /* Elimina el espacio debajo de la imagen */
+        }
+
+        .overlay {
+            position: absolute;
+            /* Posiciona el overlay sobre la imagen */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Fondo negro con opacidad */
+            color: white;
+            /* Color del texto */
+            display: flex;
+            /* Usamos flexbox para centrar el texto */
+            justify-content: center;
+            /* Centra horizontalmente */
+            align-items: center;
+            /* Centra verticalmente */
+            opacity: 0;
+            /* Inicialmente oculto */
+            transition: opacity 0.3s ease;
+            /* Transición suave */
+        }
+
+        .imagen-container:hover .overlay {
+            opacity: 1;
+            /* Muestra el overlay al hacer hover */
+        }
+    </style>
+
+    <pre>
+        &lt;div class="imagen-container"&gt;
+            &lt;img src="https://planetasmagicos.com/wp-content/uploads/2017/02/p.peque%C3%B1o-3-mod.jpg" alt="Imagen" class="imagen"&gt;
+            &lt;div class="overlay"&gt;Texto de Superposición&lt;/div&gt;
+        &lt;/div&gt;
+    </pre>
+
+    <pre>
+        &lt;style&gt;
+     
+        .imagen-container {
+            position: relative; /* Necesario para posicionar el overlay */
+            width: 200px; /* Ajusta el tamaño de la imagen */
+        }
+        
+        .imagen {
+            width: 100%; /* La imagen ocupa todo el contenedor */
+            height: auto; /* Mantiene la relación de aspecto */
+            display: block; /* Elimina el espacio debajo de la imagen */
+        }
+        
+        .overlay {
+            position: absolute; /* Posiciona el overlay sobre la imagen */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad */
+            color: white; /* Color del texto */
+            display: flex; /* Usamos flexbox para centrar el texto */
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            opacity: 0; /* Inicialmente oculto */
+            transition: opacity 0.3s ease; /* Transición suave */
+        }
+        
+        .imagen-container:hover .overlay {
+            opacity: 1; /* Muestra el overlay al hacer hover */
+        }
+        &lt;/style&gt;
+    </pre>
     <hr>
 
     <h3><strong>Ejercicio 27: Animación de carga</strong></h3>
@@ -275,6 +825,65 @@
         Crea un spinner giratorio utilizando una animación circular con <code>@keyframes</code> y
         <code>transform: rotate(...)</code>. Aprende a implementar indicadores visuales de carga.
     </p>
+
+    <div class="spinner"></div>
+
+    <style>
+        .spinner {
+            width: 100px;
+            /* Ancho del spinner */
+            height: 100px;
+            /* Alto del spinner */
+            border: 10px solid #3498db;
+            /* Color y grosor del borde */
+            border-top: 10px solid transparent;
+            /* Color del borde superior */
+            border-radius: 50%;
+            /* Hace que el div sea circular */
+            animation: spin 1s linear infinite;
+            /* Aplicar la animación */
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+                /* Comienza en 0 grados */
+            }
+
+            to {
+                transform: rotate(360deg);
+                /* Termina en 360 grados */
+            }
+        }
+    </style>
+
+    <pre>
+    &lt;div class="spinner"&gt;&lt;/div&gt;
+
+    &lt;style&gt;
+
+    .spinner {
+        width: 100px; /* Ancho del spinner */
+        height: 100px; /* Alto del spinner */
+        border: 10px solid #3498db; /* Color y grosor del borde */
+        border-top: 10px solid transparent; /* Color del borde superior */
+        border-radius: 50%; /* Hace que el div sea circular */
+        animation: spin 1s linear infinite; /* Aplicar la animación */
+    }
+    
+    @keyframes spin {
+        from {
+            transform: rotate(0deg); /* Comienza en 0 grados */
+        }
+        to {
+            transform: rotate(360deg); /* Termina en 360 grados */
+        }
+    }
+
+    &lt;/style&gt;
+</pre>
+
+
 </body>
 
 </html>
